@@ -47,6 +47,11 @@
     7. * 勾选“分组解析”，然后点击“开始”。实现对不同库的目标文件进行分组";
 }
 
+- (void)viewDidDisappear {
+    [super viewDidDisappear];
+    exit(0);
+}
+
 - (IBAction)chooseFile:(id)sender {
     NSOpenPanel *panel = [NSOpenPanel openPanel];
     panel.allowsMultipleSelection = NO;
