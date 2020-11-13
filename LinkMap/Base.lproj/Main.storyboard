@@ -60,10 +60,14 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="File" id="bib-Uj-vzu">
                                     <items>
-                                        <menuItem title="New" keyEquivalent="n" id="Was-JA-tGl"/>
+                                        <menuItem title="New" keyEquivalent="n" id="Was-JA-tGl">
+                                            <connections>
+                                                <action selector="newTablet:" target="Ady-hI-5gd" id="ypD-4q-Tgp"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Open…" keyEquivalent="o" id="IAo-SY-fd9">
                                             <connections>
-                                                <action selector="openDocument:" target="Ady-hI-5gd" id="bVn-NM-KNZ"/>
+                                                <action selector="openDocument:" target="Voe-Tx-rLC" id="Odm-dj-7gu"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Open Recent" id="tXI-mr-wws">
@@ -97,6 +101,9 @@
                                         </menuItem>
                                         <menuItem title="Exit" id="lFS-iL-bRJ">
                                             <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="exitApp:" target="Voe-Tx-rLC" id="cgv-ve-L6W"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem title="Revert to Saved" hidden="YES" id="KaW-ft-85H">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -642,10 +649,14 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+                    <connections>
+                        <outlet property="application" destination="hnw-xV-0zn" id="Djk-aR-dvd"/>
+                    </connections>
+                </customObject>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-32" y="-64"/>
+            <point key="canvasLocation" x="13" y="-201"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -667,7 +678,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="119" y="366"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KCa-5Z-j0G">

@@ -10,6 +10,7 @@
 
 @interface ViewController : NSViewController
 
+- (IBAction)chooseFile:(id)sender;
 
 @end
 

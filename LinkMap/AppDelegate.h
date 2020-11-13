@@ -7,9 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ViewController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property (nonatomic, weak) IBOutlet NSApplication *application;
 
+- (IBAction)openDocument:(id)sender;
+- (IBAction)exitApp:(id)sender;
 @end
 

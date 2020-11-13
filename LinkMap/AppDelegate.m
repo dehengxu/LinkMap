@@ -14,4 +14,16 @@
 
 @implementation AppDelegate
 
+- (void)openDocument:(id)sender {
+    NSLog(@"openDocument :%@", sender);
+    if ([self.application.mainWindow.contentViewController isKindOfClass:ViewController.class]) {
+        ViewController *vc = (ViewController *)self.application.mainWindow.contentViewController;
+        [vc chooseFile:sender];
+    }
+}
+
+- (void)exitApp:(id)sender {
+    exit(0);
+}
+
 @end
