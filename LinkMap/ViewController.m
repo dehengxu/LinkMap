@@ -29,9 +29,23 @@
 
 @implementation ViewController
 
+- (void)mouseDragged:(NSEvent *)event {
+    NSLog(@"%s", __func__, event);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.indicator.hidden = YES;
+    
+    if (@available(macOS 10.13, *)) {
+        [self.contentTextView setDragDropDelegate:self];
+        [self.contentTextView registerForDraggedTypes:@[NSPasteboardTypeFileURL]];
+        NSLog(@"registeredDraggedTypes :%@", self.contentTextView.registeredDraggedTypes);
+        NSLog(@"contentTextView :%@", self.contentTextView);
+    } else {
+        // Fallback on earlier versions
+        
+    }
     
     _contentTextView.editable = NO;
     
@@ -66,6 +80,16 @@
             self.linkMapFileURL = document;
         }
     }];
+}
+
+- (void)selectFile:(NSString *)path {
+    NSURL *fileURL = [NSURL fileURLWithPath:path];
+    _filePathField.stringValue = path;
+    self.linkMapFileURL = fileURL;
+}
+
+- (void)didDragDropedItem:(NSString *)item {
+    [self selectFile:item];
 }
 
 - (IBAction)analyze:(id)sender {

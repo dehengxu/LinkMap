@@ -26,4 +26,9 @@
     exit(0);
 }
 
+- (NSDragOperation)draggingSession:(NSDraggingSession *)session sourceOperationMaskForDraggingContext:(NSDraggingContext)context {
+    NSLog(@"dragging in :%ld", context);
+    return NSDragOperationGeneric;
+}
+
 @end

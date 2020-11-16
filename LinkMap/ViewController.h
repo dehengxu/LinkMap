@@ -7,10 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "NSTextView+NXDragDropHandler.h"
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController<NXDragDropDelegate>
 
 - (IBAction)chooseFile:(id)sender;
+
+- (void)selectFile:(NSString *)path;
 
 @end
 

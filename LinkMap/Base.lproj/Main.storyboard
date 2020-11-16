@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -656,7 +656,7 @@
                 </customObject>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13" y="-201"/>
+            <point key="canvasLocation" x="-2" y="-57"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -689,7 +689,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ALr-eZ-fys">
-                                <rect key="frame" x="539" y="442" width="92" height="32"/>
+                                <rect key="frame" x="538" y="443" width="94" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="3CH-GH-Gbd"/>
                                 </constraints>
@@ -710,7 +710,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="I8M-DG-WSk">
-                                <rect key="frame" x="462" y="404" width="67" height="32"/>
+                                <rect key="frame" x="477" y="405" width="61" height="32"/>
                                 <buttonCell key="cell" type="push" title="开始" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XP2-Lh-FvY">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -720,10 +720,10 @@
                                 </connections>
                             </button>
                             <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="VoU-Xv-rpc">
-                                <rect key="frame" x="352" y="414" width="16" height="16"/>
+                                <rect key="frame" x="368" y="414" width="16" height="16"/>
                             </progressIndicator>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pqd-pM-Qse">
-                                <rect key="frame" x="537" y="404" width="94" height="32"/>
+                                <rect key="frame" x="544" y="405" width="88" height="32"/>
                                 <buttonCell key="cell" type="push" title="输出文件" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uOL-1E-Qs0">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -735,15 +735,15 @@
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFt-sR-nuD">
                                 <rect key="frame" x="25" y="20" width="601" height="365"/>
                                 <clipView key="contentView" drawsBackground="NO" id="UXc-sD-UwH">
-                                    <rect key="frame" x="1" y="1" width="599" height="363"/>
+                                    <rect key="frame" x="1" y="1" width="584" height="363"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="zLH-fS-KrC">
-                                            <rect key="frame" x="0.0" y="0.0" width="599" height="363"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="584" height="363"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="599" height="363"/>
+                                            <size key="minSize" width="584" height="363"/>
                                             <size key="maxSize" width="601" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
@@ -754,12 +754,12 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="ONL-ND-TtJ">
-                                    <rect key="frame" x="584" y="1" width="16" height="363"/>
+                                    <rect key="frame" x="585" y="1" width="15" height="363"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xh9-IL-MDL">
-                                <rect key="frame" x="20" y="410" width="307" height="21"/>
+                                <rect key="frame" x="20" y="410" width="323" height="21"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="模块关键字" drawsBackground="YES" id="rPO-Si-6g9">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -767,7 +767,7 @@
                                 </textFieldCell>
                             </textField>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="jz7-uS-xpD">
-                                <rect key="frame" x="378" y="413" width="76" height="18"/>
+                                <rect key="frame" x="388" y="413" width="80" height="18"/>
                                 <buttonCell key="cell" type="check" title="分组解析" bezelStyle="regularSquare" imagePosition="left" inset="2" id="FBA-2K-XY9">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -808,7 +808,7 @@
                 </viewController>
                 <customObject id="oj6-h6-igk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-149" y="893"/>
+            <point key="canvasLocation" x="112" y="1072"/>
         </scene>
     </scenes>
 </document>

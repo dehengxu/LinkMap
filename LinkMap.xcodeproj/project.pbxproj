@@ -13,6 +13,7 @@
 		6E7367F21CB7843200722B99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7367F11CB7843200722B99 /* Assets.xcassets */; };
 		6E7367F51CB7843200722B99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E7367F31CB7843200722B99 /* Main.storyboard */; };
 		6E73680C1CB784F100722B99 /* SymbolModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E73680B1CB784F100722B99 /* SymbolModel.m */; };
+		74318754255F8C0600C8C7EC /* NSTextView+NXDragDropHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 74318753255F8C0600C8C7EC /* NSTextView+NXDragDropHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		6E7367F61CB7843200722B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E73680A1CB784F100722B99 /* SymbolModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolModel.h; sourceTree = "<group>"; };
 		6E73680B1CB784F100722B99 /* SymbolModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolModel.m; sourceTree = "<group>"; };
+		74318752255F8C0600C8C7EC /* NSTextView+NXDragDropHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTextView+NXDragDropHandler.h"; sourceTree = "<group>"; };
+		74318753255F8C0600C8C7EC /* NSTextView+NXDragDropHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTextView+NXDragDropHandler.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				6E7367E91CB7843200722B99 /* AppDelegate.m */,
 				6E7367EE1CB7843200722B99 /* ViewController.h */,
 				6E7367EF1CB7843200722B99 /* ViewController.m */,
+				74318752255F8C0600C8C7EC /* NSTextView+NXDragDropHandler.h */,
+				74318753255F8C0600C8C7EC /* NSTextView+NXDragDropHandler.m */,
 				6E73680A1CB784F100722B99 /* SymbolModel.h */,
 				6E73680B1CB784F100722B99 /* SymbolModel.m */,
 				6E7367F11CB7843200722B99 /* Assets.xcassets */,
@@ -108,10 +113,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = ND;
+				ORGANIZATIONNAME = NX;
 				TargetAttributes = {
 					6E7367E41CB7843200722B99 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 375GT6S3QN;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -155,6 +162,7 @@
 				6E7367ED1CB7843200722B99 /* main.m in Sources */,
 				6E7367EA1CB7843200722B99 /* AppDelegate.m in Sources */,
 				6E73680C1CB784F100722B99 /* SymbolModel.m in Sources */,
+				74318754255F8C0600C8C7EC /* NSTextView+NXDragDropHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,12 +263,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 375GT6S3QN;
 				INFOPLIST_FILE = LinkMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nd.LinkMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dehengxu.LinkMapAnalysor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -268,12 +280,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 375GT6S3QN;
 				INFOPLIST_FILE = LinkMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nd.LinkMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dehengxu.LinkMapAnalysor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
